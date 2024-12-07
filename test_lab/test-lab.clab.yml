@@ -1,1 +1,22 @@
+name: test-lab
 
+topology:
+  nodes:
+    ros1:
+      kind: mikrotik_ros
+      image: initnetworks/clab_images:ros-7.17rc1
+      startup-config: config/config_switch.txt
+#      startup-config: https://raw.githubusercontent.com/srl-labs/containerlab/main/tests/02-basic-srl/srl2-startup.cli
+      group: spine
+    pc1:
+      kind: linux
+      image: initnetworks/clab_images:host
+      group: server
+    pc2:
+      kind: linux
+      image: initnetworks/clab_images:host
+      group: server
+
+  links:
+    - endpoints: ["ros1:eth1", "pc1:eth1"]
+    - endpoints: ["ros1:eth2", "pc2:eth1"]
