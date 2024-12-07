@@ -1,5 +1,5 @@
-# clab
-Containerlab images
+# clab simple lab
+Containerlab simple lab
 
 Para conectarse al contenedor de un host debo ejecutar el siguiente comando:
 
