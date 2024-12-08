@@ -1,6 +1,6 @@
 # clab simple lab
 Containerlab running in codespaces test lab.
-init-networks/clab
+
 ---
 <div align=center>
 <a href="https://codespaces.new/init-networks/clab?quickstart=1">
