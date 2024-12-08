@@ -1,10 +1,5 @@
 # clab simple lab
-Containerlab simple lab
-
-Para conectarse al contenedor de un host debo ejecutar el siguiente comando:
-
-`docker exec -it clab-lab1-pc1 bash`
-
+Containerlab running in codespaces test lab.
 init-networks/clab
 ---
 <div align=center>
