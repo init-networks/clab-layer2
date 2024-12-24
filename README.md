@@ -1,5 +1,5 @@
-# clab simple lab
-Containerlab running in codespaces test lab.
+# Layer 2 lab
+Containerlab Layer 2 lab running in codespaces.
 
 ---
 <div align=center>
