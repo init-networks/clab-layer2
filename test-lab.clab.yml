@@ -12,18 +12,26 @@ topology:
       kind: linux
       image: initnetworks/clab_images:host
       group: server
+      exec:
+        - "ip address add dev eth1 10.0.0.1/24"
     pc2:
       kind: linux
       image: initnetworks/clab_images:host
       group: server
+      exec:
+        - "ip address add dev eth1 10.0.0.2/24"
     pc3:
       kind: linux
       image: initnetworks/clab_images:host
       group: server
+      exec:
+        - "ip address add dev eth1 10.0.0.3/24"
     pc4:
       kind: linux
       image: initnetworks/clab_images:host
       group: server
+      exec:
+        - "ip address add dev eth1 10.0.0.4/24"
   links:
     - endpoints: ["sw1:eth1", "pc1:eth1"]
     - endpoints: ["sw1:eth2", "pc2:eth1"]
