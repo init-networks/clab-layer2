@@ -1,3 +1,5 @@
 /interface bridge add name=bridge1 protocol-mode=none vlan-filtering=yes
 /interface bridge port add bridge=bridge1 interface=ether2
 /interface bridge port add bridge=bridge1 interface=ether3
+/interface bridge port add bridge=bridge1 interface=ether4
+/interface bridge port add bridge=bridge1 interface=ether5
