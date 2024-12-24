@@ -2,7 +2,7 @@ name: test-lab
 
 topology:
   nodes:
-    ros1:
+    sw1:
       kind: mikrotik_ros
       image: initnetworks/clab_images:ros-7.17rc1
       startup-config: config/config_switch.txt
@@ -18,5 +18,5 @@ topology:
       group: server
 
   links:
-    - endpoints: ["ros1:eth1", "pc1:eth1"]
-    - endpoints: ["ros1:eth2", "pc2:eth1"]
+    - endpoints: ["sw1:eth1", "pc1:eth1"]
+    - endpoints: ["sw1:eth2", "pc2:eth1"]
